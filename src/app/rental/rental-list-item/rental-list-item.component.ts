@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'bwm-rental-list-item',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rental-list-item.component.scss']
 })
 export class RentalListItemComponent implements OnInit {
+
+  @Input() rental: any[];
 
   constructor() { }
 
