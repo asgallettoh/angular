@@ -37,9 +37,9 @@ class FakeDb {
 		}]
 	}
 
-	// async cleanDb(){
-	// 	await Rental.remove({});
-	// }
+	async cleanDb(){
+		await Rental.remove({});
+	}
 
 	pushRentalToDb(){
 		this.rentals.forEach((rental) => {
@@ -49,7 +49,7 @@ class FakeDb {
 	}
 
 	seedDb(){
-		// this.cleanDb();
+		this.cleanDb();
 		this.pushRentalToDb();
 	}
 }
